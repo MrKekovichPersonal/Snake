@@ -32,11 +32,11 @@ class Snake:
                  initial_position: Point = Point(0, 0),
                  body_color: tuple | str = None,
                  head_color: tuple | str = None):
-        self.head = Square(center=initial_position, color=Snake.HEAD_COLOR)
-        self.body: list[Square] = []
-
         self.body_color = body_color or self.BODY_COLOR
         self.head_color = head_color or self.HEAD_COLOR
+
+        self.head = Square(center=initial_position, color=self.head_color)
+        self.body: list[Square] = []
 
         self.score = 0
 
