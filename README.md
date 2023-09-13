@@ -31,8 +31,8 @@ RANDOM_INITIAL_POSITION=True
 RANDOM_INITIAL_DIRECTION=True
 BACKGROUND_COLOR=(0,0,0)
 FOOD_COLOR=(255,255,255)
-WIDTH=30
-HEIGHT=40
+WIDTH=40
+HEIGHT=30
 ```
 1. Side length: the length side of the single square
 2. Border width: the width of the border
