@@ -15,6 +15,39 @@ cd "path/to/Snake"
 pip install -r requirements.txt
 ```
 ---
+# Setup:
+open [settings.env](settings.env) and set settings as you like.
+### default settings:
+```dotenv
+SIDE_LENGTH=10
+BORDER_WIDTH=2
+
+SNAKE_BODY_COLOR=(0,255,0)
+SNAKE_HEAD_COLOR=(0,150,0)
+
+SPEED=10
+FOOD_AMOUNT=3
+RANDOM_INITIAL_POSITION=True
+RANDOM_INITIAL_DIRECTION=True
+BACKGROUND_COLOR=(0,0,0)
+FOOD_COLOR=(255,255,255)
+WIDTH=30
+HEIGHT=40
+```
+1. Side length: the length side of the single square
+2. Border width: the width of the border
+3. Snake body color: the color of the snake body (RGB format)
+4. Snake head color: the color of the snake head (RGB format)
+5. Speed: the game framerate. -1 for unlimited
+6. Food amount: how much food to spawn.
+7. Random initial position: if True, the snake will spawn in a random position. If False, the snake will spawn in the center of the screen.
+8. Random initial direction: if True, the snake will spawn in a random direction. If False, the snake will spawn in the direction "up".
+9. Background color: the color of the background (RGB format)
+10. Food color: the color of the food (RGB format)
+11. Width: the width of the screen (1 unit = `BORDER_WIDTH * 2 + SIDE_LENGTH`)
+12. Height: the height of the screen (1 unit = `BORDER_WIDTH * 2 + SIDE_LENGTH`)
+
+---
 # Run the game:
 for Windows:
 ```bash
